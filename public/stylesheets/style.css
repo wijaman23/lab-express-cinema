@@ -6,3 +6,31 @@ body {
 a {
   color: #00B7FF;
 }
+.container-index {
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 106%;
+  height: 940px;
+  background-image: url(/images/cinema.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.container-index-text{
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.container-h1 {
+  color: white;
+  font-size: 2em;
+}
+.btn {
+  text-decoration: none;
+}
+.img-detail{
+  width: 270px;
+  height: auto;
+}

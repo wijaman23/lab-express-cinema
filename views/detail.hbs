@@ -1,0 +1,31 @@
+<div class="card text-bg-light" style="max-width: 50%;">
+  <div class="row g-1">
+    <div class="col-md-4">
+      <img src="{{movie.image}}" class="img-detail" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+            <h1 class="card-title">{{movie.title}}</h1>
+            <br>
+            <h4 class="card-text">Director: {{movie.director}} </h4>
+            <br>
+            <h6>Stars</h6>
+               <p class="card-text"><small class="text-muted">
+               
+                {{#each movie.stars as |start|}}
+                <ul>
+                    <li>{{start}}</li>
+                </ul>
+                {{/each}}</small>
+            </p>         
+            <p class="card-text">{{movie.description}}</p>
+            <p class="card-text"><small class="text-muted">
+                {{#each movie.showtimes as |showtime|}}
+                {{showtime}} |
+                {{/each}}</small>
+            </p>
+            <a href="/movies" class="btn btn-primary">Go Back</a>
+      </div>
+    </div>
+  </div>
+</div>
